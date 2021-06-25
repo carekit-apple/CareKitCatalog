@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		03AE491E24A2DC7C001DF6F0 /* OCKCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AE491D24A2DC7C001DF6F0 /* OCKCatalogTests.swift */; };
+		03BF9D6E26869EC600898ACE /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03BF9D6D26869EC600898ACE /* CareKit */; };
+		03BF9D7026869EC600898ACE /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 03BF9D6F26869EC600898ACE /* CareKitStore */; };
+		03BF9D7226869EC600898ACE /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03BF9D7126869EC600898ACE /* CareKitUI */; };
 		0574211523D230A3004B48BA /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0574210B23D230A3004B48BA /* UIUtilities.swift */; };
 		0574211623D230A3004B48BA /* OCKCatalogGridTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0574210D23D230A3004B48BA /* OCKCatalogGridTaskScreen.swift */; };
 		0574211723D230A3004B48BA /* OCKCatalogHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0574210E23D230A3004B48BA /* OCKCatalogHomeScreen.swift */; };
@@ -44,13 +47,7 @@
 		5177A16B24981661001791D2 /* PlatformPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A16A24981661001791D2 /* PlatformPicker.swift */; };
 		5177A16D2498175F001791D2 /* MiscellaneousSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A16C2498175F001791D2 /* MiscellaneousSection.swift */; };
 		5177A16F24981F0C001791D2 /* ContactSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A16E24981F0C001791D2 /* ContactSection.swift */; };
-		517A8FFD23D167D000B64144 /* CareKitStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517A8FF923D167D000B64144 /* CareKitStore.framework */; };
-		517A8FFE23D167D000B64144 /* CareKitStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 517A8FF923D167D000B64144 /* CareKitStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		517A8FFF23D167D000B64144 /* CareKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517A8FFA23D167D000B64144 /* CareKitUI.framework */; };
-		517A900023D167D000B64144 /* CareKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 517A8FFA23D167D000B64144 /* CareKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		51ACAFAE246B010A001E18F3 /* Environment+StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ACAFAD246B010A001E18F3 /* Environment+StoreManager.swift */; };
-		51E2143324450C3B0063A121 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E2143224450C3B0063A121 /* CareKit.framework */; };
-		51E2143424450C3B0063A121 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51E2143224450C3B0063A121 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		51FF41862497EE4A00B616B4 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FF41852497EE4A00B616B4 /* CatalogView.swift */; };
 		E7D01103222498F400C008DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D01102222498F400C008DE /* Assets.xcassets */; };
 		E7D01106222498F400C008DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D01104222498F400C008DE /* LaunchScreen.storyboard */; };
@@ -105,19 +102,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		517A900223D167D000B64144 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				51E2143424450C3B0063A121 /* CareKit.framework in Embed Frameworks */,
-				517A8FFE23D167D000B64144 /* CareKitStore.framework in Embed Frameworks */,
-				517A900023D167D000B64144 /* CareKitUI.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -126,7 +110,6 @@
 		051FFF90247853D600761821 /* CareKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CareKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		051FFF93247853E200761821 /* CareKitStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CareKitStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0520468123C3C181004F0F36 /* OCKCatalog.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = OCKCatalog.xctestplan; sourceTree = "<group>"; };
-		0538B08F237A178000713256 /* OCKCatalog QA.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OCKCatalog QA.xctestplan"; sourceTree = "<group>"; };
 		0574210B23D230A3004B48BA /* UIUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
 		0574210D23D230A3004B48BA /* OCKCatalogGridTaskScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCKCatalogGridTaskScreen.swift; sourceTree = "<group>"; };
 		0574210E23D230A3004B48BA /* OCKCatalogHomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCKCatalogHomeScreen.swift; sourceTree = "<group>"; };
@@ -198,10 +181,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51E2143324450C3B0063A121 /* CareKit.framework in Frameworks */,
+				03BF9D6E26869EC600898ACE /* CareKit in Frameworks */,
+				03BF9D7026869EC600898ACE /* CareKitStore in Frameworks */,
 				51746F302448BEE500B647E1 /* HealthKit.framework in Frameworks */,
-				517A8FFD23D167D000B64144 /* CareKitStore.framework in Frameworks */,
-				517A8FFF23D167D000B64144 /* CareKitUI.framework in Frameworks */,
+				03BF9D7226869EC600898ACE /* CareKitUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +319,6 @@
 			isa = PBXGroup;
 			children = (
 				0520468123C3C181004F0F36 /* OCKCatalog.xctestplan */,
-				0538B08F237A178000713256 /* OCKCatalog QA.xctestplan */,
 				E7D010FA222498F400C008DE /* OCKCatalog */,
 				5143E1F722C2832600E32526 /* OCKCatalogTests */,
 				5173CBA323C3AB22007655A0 /* OCKCatalogUITests */,
@@ -456,9 +438,7 @@
 			buildPhases = (
 				E7D010F4222498F400C008DE /* Sources */,
 				E7D010F6222498F400C008DE /* Resources */,
-				51936B1B22418DAA00F7B1DD /* ShellScript */,
 				517A900123D167D000B64144 /* Frameworks */,
-				517A900223D167D000B64144 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -466,6 +446,9 @@
 			);
 			name = OCKCatalog;
 			packageProductDependencies = (
+				03BF9D6D26869EC600898ACE /* CareKit */,
+				03BF9D6F26869EC600898ACE /* CareKitStore */,
+				03BF9D7126869EC600898ACE /* CareKitUI */,
 			);
 			productName = OCK2SampleApp;
 			productReference = E7D010F8222498F400C008DE /* OCKCatalog.app */;
@@ -511,6 +494,9 @@
 				Base,
 			);
 			mainGroup = E7D010EF222498F400C008DE;
+			packageReferences = (
+				03BF9D6C26869EC600898ACE /* XCRemoteSwiftPackageReference "CareKit" */,
+			);
 			productRefGroup = E7D010F9222498F400C008DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1129,6 +1115,35 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03BF9D6C26869EC600898ACE /* XCRemoteSwiftPackageReference "CareKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/carekit-apple/CareKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03BF9D6D26869EC600898ACE /* CareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03BF9D6C26869EC600898ACE /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKit;
+		};
+		03BF9D6F26869EC600898ACE /* CareKitStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03BF9D6C26869EC600898ACE /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitStore;
+		};
+		03BF9D7126869EC600898ACE /* CareKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03BF9D6C26869EC600898ACE /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E7D010F0222498F400C008DE /* Project object */;
 }
